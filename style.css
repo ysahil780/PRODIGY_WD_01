@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    position : relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* navigation bar  */
+.navbar{
+    background-color: #7ac3ff;
+    width: 100%;
+    max-height: 70px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    position : fixed;
+    display: flex;
+    z-index:9;
+}
+.icc-logo{
+    height: 70px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+.nav-items a{
+    margin: 20px;
+}
+.search-box{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color:  #7ac3ff;
+    color: white;
+    font-size: large;
+}
+.right-container{
+    display: inline-block;
+    margin-left: auto;
+}
+
+/* aboutus section  */
+.white-section{
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.p1{
+    width:100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 50px;;
+}
+.abouticc{
+    line-height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding: 30px 8%;
+}
+h2{
+    text-align: center;
+    background-color: #7ac3ff;
+    padding : 10px;
+    /* margin-bottom: 20px; */
+}
+p{
+    width: 100%;
+}
+
+
+a{
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(10, 67, 105);
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+.logos{
+    overflow: hidden;
+    padding :50px 0;
+    white-space: nowrap;
+    background-color: white;
+    position: relative;
+}
+.logos:before,
+.logos:after{
+    position : absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 5;
+}
+.logos:before{
+    left: 0;
+    background: linear-gradient(to left,rgb(255,255,255,0),white);
+}
+.logos:after{
+    right:0;
+    background: linear-gradient(to right,rgb(255,255,255,0),white);
+    
+}
+.logoslide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+.logoslide img{
+    height: 100px;
+    margin: 0 40px;
+}
+
+
+/* formats */
+
+.format{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    padding: 50px 100px 100px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.format-item{
+    height: 275px;
+    width: 275px;
+    object-fit: cover;
+}
+.f1{
+    margin:auto;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 0 5px 20px black;
+    border-radius: 10px;
+}
+.f1:hover {
+    transform: scale(1.2, 1.2);
+}
+.f1:hover::after {
+    opacity: 1;
+}
+.f1 p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* teams */
+.team-container{
+    margin-bottom: 50px;
+ }
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.team{
+    margin : 15px;
+    position : relative;
+}
+.teamimg{
+    border-radius: 20px;
+}
+.team p{
+    position : absolute;
+    bottom: 4px;
+    text-align: center;
+    font-family: cursive;
+    padding: 5px 0;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* events */
+.events{
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  padding: 20px;
+  margin: 50px;
+}
+.evt-img{
+    border-radius: 10px;
+}
+.event{
+    margin-left: 50px;
+    text-align: center;
+}
+.event p{
+    text-align: center;
+    margin-top: 3px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+/* parteners logo styling */
+.partners{
+    background-color: #06011a;
+    text-align: center;
+    box-shadow: 0px -25px 50px -20px rgba(0,0,0,0.45),0px 25px 20px -20px rgba(0,0,0,0.45);
+}
+.p-img{
+    width: 10%;
+    margin: 20px 20px 50px;
+    border-radius:5%;
+}
+
+
+/* footer */
+.bottom-container{
+    background-color: #7ac3ff;
+    padding: 40px 0 20px;
+    text-align: center;
+ }
+ .bottom-container p{
+    margin-top: 15px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.navbar{
+    width: 100%;
+    height : 70px;
+    display: inline;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.icc-logo{
+    height: 70px;
+}
+.nav-links{
+    margin-left:20px ;
+    display: flex;
+    list-style: none;
+}*/
+/* .nav-item a{
+    text-decoration: none;      
+    margin-left: 20px;      
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.right-container{
+    display: inline-block;
+    margin-left: auto;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    margin-right: 20px;
+    outline: none;
+    
+}
+.sub-btn{
+    background-color: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.login-link{
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.team-logo{
+    margin-top: 100px;
+}
+.white-section{
+    margin-top: 100px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    overflow: hidden;
+}
+.p1{
+    border-radius: 10px;
+}
+.logo{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition:0.5s ;
+} */
